@@ -1,1 +1,1 @@
-# goJsDemo
+This contains the visualization of a Drupal project folder structure using GoJS.
