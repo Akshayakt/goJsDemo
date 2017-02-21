@@ -8,13 +8,13 @@
    {
       "key":"core",
       "parent":"Project root folder",
-      "details": " This contains all of drupal core except for things that must be in the root, like index.php etc. Generally you shouldn't need to be adding/editing/removing anything in here.",
+      "details": "This contains all of drupal core except for things that must be in the root, like index.php etc. Generally, you shouldn't need to be adding/editing/removing anything in here.",
       "folder": "true"
    },
    {
       "key":"modules",
       "parent":"Project root folder",
-      "details": "The directory into which all custom and contrib modules go. Splitting this up into the sub-directories \"contrib\" and \"custom\" can make it easier to keep track of the modules.",
+      "details": "The directory into which all downloaded and custom modules go. Splitting this up into the sub-directories \"contrib\" and \"custom\" can make it easier to keep track of the modules.",
       "folder": "true"
    },
    {
@@ -26,13 +26,13 @@
    {
       "key":"sites",
       "parent":"Project root folder",
-      "details": "Site specific files tend to go here. This could be files uploaded by users, such as images, but also includes the configuration, active as well as staged config. The configuration is read and written by Drupal, and should have the minimal amount of privileges required for the webserver, and the only the webserver, to read and modify them.",
+      "details": "Site-specific files tend to go here. This could be files uploaded by users, such as images, but also includes the configuration, active as well as staged config. The configuration is read and written by Drupal and should have the minimal amount of privileges required for the web server, and the only the web server, to read and modify them.",
       "folder": "true"
    },
    {
       "key":"themes",
       "parent":"Project root folder",
-      "details": "Contatins downloaded and custom themes. This directory separates downloaded and custom themes from Drupal core's themes. This allows Drupal core to be updated without overwriting these files.",
+      "details": "Contains downloaded and custom themes. This directory separates downloaded and custom themes from Drupal core's themes. This allows Drupal core to be updated without overwriting these files.",
       "folder": "true"
    },
    {
@@ -158,7 +158,7 @@
    {
       "key":"fonts",
       "parent":"custom-theme",
-      "details": "Contains fonts used in custom theme.",
+      "details": "Contains fonts used in the custom theme.",
       "folder": "true"
    },
    {
@@ -176,7 +176,7 @@
    {
       "key":"js",
       "parent":"custom-theme",
-      "details": "Contains scripts files",
+      "details": "Contains scripts files.",
       "folder": "true"
    },
    {
@@ -194,13 +194,13 @@
    {
       "key":"custom-theme.info.yml",
       "parent":"custom-theme",
-      "details": "This file stores metadata about the custom theme. It notify Drupal about the existence of a module, theme, or install profile.",
+      "details": "This file stores metadata about the custom theme. It notifies Drupal about the existence of a module, theme, or install profile.",
       "folder": "false"
    },
    {
       "key":"custom-theme.libraries.yml",
       "parent":"custom-theme",
-      "details": "This file is used to add any kind of assets (css or javascript) to the page.",
+      "details": "This file is used to add any kind of assets (CSS or JavaScript) to the page.",
       "folder": "false"
    },
    {

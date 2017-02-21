@@ -14,6 +14,7 @@ $(document).ready(function () {
             allowCopy: false,
             allowDelete: false,
             allowHorizontalScroll: false,
+            "animationManager.isEnabled": false,
             layout:
                 $$(go.TreeLayout,
                 {
@@ -36,7 +37,27 @@ $(document).ready(function () {
                 // no Adornment: instead change panel background color by binding to Node.isSelected
                 selectionAdorned: false,
                 // calls custom function to display details about each node when clicked
-                click: showDetails
+                click: showDetails,
+                // a custom function to allow expanding/collapsing on double-click
+                // this uses similar logic to a TreeExpanderButton
+                doubleClick: function(e, node) {
+                    var cmd = diagram.commandHandler;
+                    if (node.isTreeExpanded) {
+                        if (!cmd.canCollapseTree(node))
+                            return;
+                    }
+                    else {
+                        if (!cmd.canExpandTree(node))
+                            return;
+                    }
+                    e.handled = true;
+                    if (node.isTreeExpanded) {
+                        cmd.collapseTree(node);
+                    }
+                    else {
+                        cmd.expandTree(node);
+                    }
+                }
             },
             $$("TreeExpanderButton",
             {
