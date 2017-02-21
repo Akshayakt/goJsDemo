@@ -1,0 +1,212 @@
+[
+   {
+      "key":"Project root folder",
+      "parent":"",
+      "details": "Root folder",
+      "folder": "true"
+   },
+   {
+      "key":"core",
+      "parent":"Project root folder",
+      "details": " This contains all of drupal core except for things that must be in the root, like index.php etc. Generally you shouldn't need to be adding/editing/removing anything in here.",
+      "folder": "true"
+   },
+   {
+      "key":"modules",
+      "parent":"Project root folder",
+      "details": "The directory into which all custom and contrib modules go. Splitting this up into the sub-directories \"contrib\" and \"custom\" can make it easier to keep track of the modules.",
+      "folder": "true"
+   },
+   {
+      "key":"profiles",
+      "parent":"Project root folder",
+      "details": "Contains downloaded and custom installation profiles. Installation profiles are generally provided as part of a Drupal distribution.",
+      "folder": "true"
+   },
+   {
+      "key":"sites",
+      "parent":"Project root folder",
+      "details": "Site specific files tend to go here. This could be files uploaded by users, such as images, but also includes the configuration, active as well as staged config. The configuration is read and written by Drupal, and should have the minimal amount of privileges required for the webserver, and the only the webserver, to read and modify them.",
+      "folder": "true"
+   },
+   {
+      "key":"themes",
+      "parent":"Project root folder",
+      "details": "Contatins downloaded and custom themes. This directory separates downloaded and custom themes from Drupal core's themes. This allows Drupal core to be updated without overwriting these files.",
+      "folder": "true"
+   },
+   {
+      "key":"vendors",
+      "parent":"Project root folder",
+      "details": "Backend libraries that Drupal Core depends on. (Symfony, Twig, etc).",
+      "folder": "true"
+   },
+   {
+      "key":"autoload.php",
+      "parent":"Project root folder",
+      "details": "Includes the autoloader created by Composer.",
+      "folder": "false"
+   },
+   {
+      "key":"composer.json",
+      "parent":"Project root folder",
+      "details": "You can list the dependencies of the project in this file and running composer install will download the dependencies.",
+      "folder": "false"
+   },
+   {
+      "key":"composer.lock",
+      "parent":"Project root folder",
+      "details": "This file locks the dependencies of your project to a known state. This file is generated automatically.",
+      "folder": "false"
+   },
+   {
+      "key":"example.gitignore",
+      "parent":"Project root folder",
+      "details": "This file contains default .gitignore rules. To use it, copy it to .gitignore, and it will cause files like your settings.php and user-uploaded files to be excluded from Git version control. This is a common strategy to avoid accidentally including private information in public repositories and patch files.",
+      "folder": "false"
+   },
+   {
+      "key":"index.php",
+      "parent":"Project root folder",
+      "details": "The PHP page that serves all page requests on a Drupal installation.",
+      "folder": "false"
+   },
+   {
+      "key":"robots.txt",
+      "parent":"Project root folder",
+      "details": "This file is to prevent the crawling and indexing of certain parts of your site by web crawlers and spiders run by sites like Yahoo! and Google. By telling these \"robots\" where not to go on your site, you save bandwidth and server resources.",
+      "folder": "false"
+   },
+   {
+      "key":"update.php",
+      "parent":"Project root folder",
+      "details": "The PHP page that handles updating the Drupal installation.",
+      "folder": "false"
+   },
+   {
+      "key":"web.config",
+      "parent":"Project root folder",
+      "details": "Server configuration file.",
+      "folder": "false"
+   },
+   {
+      "key":"assets",
+      "parent":"core",
+      "details": "Various external libraries used by Core (includes jQuery, underscore, modernizer, etc.)",
+      "folder": "true"
+   },
+   {
+      "key":"misc",
+      "parent":"core",
+      "details": "Frontend code that Drupal Core depends on.",
+      "folder": "true"
+   },
+   {
+      "key":"core/includes",
+      "parent":"core",
+      "details": "Functionality that is to low level to be modular. Such as the module system itself.",
+      "folder": "true"
+   },
+   {
+      "key":"lib",
+      "parent":"core",
+      "details": "Drupal Core classes.",
+      "folder": "true"
+   },
+   {
+      "key":"core/modules",
+      "parent":"core",
+      "details": "Drupal Core modules.",
+      "folder": "true"
+   },
+   {
+      "key":"core/profiles",
+      "parent":"core",
+      "details": "Drupal Core installation profiles. Minimal, Standard, Testing and Testing multilingual installation profiles by default.",
+      "folder": "true"
+   },
+   {
+      "key":"scripts",
+      "parent":"core",
+      "details": "Various CLI scripts, mostly used by developers.",
+      "folder": "true"
+   },
+   {
+      "key":"tests",
+      "parent":"core",
+      "details": "Drupal Core tests.",
+      "folder": "true"
+   },
+   {
+      "key":"core/themes",
+      "parent":"core",
+      "details": "Drupal Core themes.",
+      "folder": "true"
+   },
+   {
+      "key":"custom-theme",
+      "parent":"themes",
+      "details": "Custom theme folder.",
+      "folder": "true"
+   },
+   {
+      "key":"css",
+      "parent":"custom-theme",
+      "details": "Contains CSS files.",
+      "folder": "true"
+   },
+   {
+      "key":"fonts",
+      "parent":"custom-theme",
+      "details": "Contains fonts used in custom theme.",
+      "folder": "true"
+   },
+   {
+      "key":"images",
+      "parent":"custom-theme",
+      "details": "Contains images.",
+      "folder": "true"
+   },
+   {
+      "key":"includes",
+      "parent":"custom-theme",
+      "details": "Contains common template files that can be reused.",
+      "folder": "true"
+   },
+   {
+      "key":"js",
+      "parent":"custom-theme",
+      "details": "Contains scripts files",
+      "folder": "true"
+   },
+   {
+      "key":"templates",
+      "parent":"custom-theme",
+      "details": "Template files to override the basic templates.",
+      "folder": "true"
+   },
+   {
+      "key":"logo.svg",
+      "parent":"custom-theme",
+      "details": "Logo of the custom theme.",
+      "folder": "false"
+   },
+   {
+      "key":"custom-theme.info.yml",
+      "parent":"custom-theme",
+      "details": "This file stores metadata about the custom theme. It notify Drupal about the existence of a module, theme, or install profile.",
+      "folder": "false"
+   },
+   {
+      "key":"custom-theme.libraries.yml",
+      "parent":"custom-theme",
+      "details": "This file is used to add any kind of assets (css or javascript) to the page.",
+      "folder": "false"
+   },
+   {
+      "key":"custom-theme.theme",
+      "parent":"custom-theme",
+      "details": "Contains functions to support theming in the custom theme.",
+      "folder": "false"
+   }
+]
