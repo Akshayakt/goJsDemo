@@ -1,0 +1,47 @@
+@import 'variables';
+
+.fixed-background {
+  background-color: $color-common-bg;
+  bottom: 0;
+  font-family: sans-serif;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.main-wrapper {
+  margin-top: 25px;
+  padding: 40px;
+  position: relative;
+
+  @media only screen and (min-width: 768px) {
+    margin-top: 50px;
+  }
+}
+
+.diagram-container {
+  background-color: $color-base;
+  height: 900px;
+
+  @media only screen and (min-width: 768px) {
+    display: inline-block;
+    vertical-align: middle;
+    width: 49%;
+  }
+}
+
+.node-details {
+  font-size: 17px;
+  margin-top: 20px;
+  @media only screen and (min-width: 768px) {
+    display: inline-block;
+    margin-top: 0;
+    padding-left: 30px;
+    vertical-align: middle;
+    width: 49%;
+  }
+}

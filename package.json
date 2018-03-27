@@ -1,0 +1,42 @@
+{
+  "name": "gojs-folder-view",
+  "version": "1.0.0",
+  "description": "This contains the visualization of a Drupal 8 project folder structure using GoJS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akshayakt/goJsFolderView.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akshayakt/goJsFolderView/issues"
+  },
+  "homepage": "https://github.com/Akshayakt/goJsFolderView#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.1.0",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "dev": "^0.1.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.1",
+    "gojs": "^1.8.16"
+  }
+}

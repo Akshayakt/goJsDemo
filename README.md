@@ -1,1 +1,11 @@
-This contains the visualization of a Drupal 8 project folder structure using GoJS.
+# To Configure & Prerequisite
+
+* Clone the project. Checkout to branch 'webpack-config'
+
+* Install node and npm
+
+* Install npm packages ```npm install```
+
+* To run application in development mode: ```npm start```
+
+* To run application in production mode: ```npm run build```
